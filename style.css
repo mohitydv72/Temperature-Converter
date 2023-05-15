@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    padding: 2em;
+    font-family:sans-serif;
+    background: #ececec;
+    text-align: center;
+}
+.title{
+    font-size: 3em;
+    margin-bottom: 2em;
+    color: #222;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    flex-wrap: wrap;
+}
+.temp{
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    min-width: 15em;
+    height: 13em;
+    position: relative;
+}
+.temp:nth-child(1){
+    background: #ff4040;
+}
+.temp:nth-child(2){
+    background: #4070ff;
+}
+.temp:nth-child(3){
+    background: #62ff24;
+}
+/* Hide the default arrow */
+.temp input::-webkit-inner-spin-button,
+.temp input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.temp input{
+    border: none;
+    background: none;
+    width: 4em;
+    height: 2em;
+    font-size: 3em;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+}
+.temp h2{
+    color: #fff;
+}
+.temp input:focus{
+    outline: none;
+}
+.c2{
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+}
+.clear {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    width: 10em;
+    height: 4em;
+    position: relative;
+    background: #ffc800;
+}
+.clear h2{
+    color: #fff;
+}
+.clear:hover{
+    cursor: pointer;
+    background: #4070ff;
+}
